@@ -3,7 +3,11 @@ server:
 spring:
   application:
     name: batch-demo
-
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
   datasource:
     username: undefvar
     password: secret
